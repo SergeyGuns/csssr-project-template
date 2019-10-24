@@ -3,6 +3,9 @@ app/styles/helpers/svg-size.styl
 app/styles/sprites
 dist
 
+
+# credentials
+tasks/credentials.js
 # Numerous always-ignore extensions
 *.bak
 *.diff

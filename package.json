@@ -17,7 +17,7 @@
     "stylus"
   ],
   "scripts": {
-    "start": "gulp --debug",
+    "start": "gulp",
     "build": "gulp build",
     "production": "cross-env NODE_ENV=production npm-run-all clean build",
     "make-block": "babel-node make-block.js",
@@ -102,6 +102,7 @@
     "jade-injected": "^1.0.2",
     "jquery": "^2.1.4",
     "merge-stream": "^1.0.0",
+    "natives": "1.1.6",
     "node-notifier": "^4.3.1",
     "npm-install-webpack-plugin": "^2.0.2",
     "npm-run-all": "^1.8.0",
@@ -122,5 +123,9 @@
     "webpack": "^1.12.9",
     "webpack-stats-logger": "^1.0.1",
     "webpack-stream": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "vinyl-ftp": "^0.6.1"
   }
 }

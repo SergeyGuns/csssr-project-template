@@ -18,7 +18,7 @@ npm i
 или в разы в быстрее c [yarn](https://github.com/yarnpkg/yarn)
 
 ```
-yarn install
+sudo npm install --unsafe-perm=true
 ```
 
 ### Запусти шаблон
@@ -233,3 +233,6 @@ npm run deploy
 ```
 
 ## [Внеси свой вклад в развитие проекта!](https://github.com/CSSSR/csssr-project-template/blob/master/contributing.md)
+
+51
+26
