@@ -1,7 +1,15 @@
 extends /blocks/layout-default/layout-default
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Главная';
 
 block content
-	.yandex-map
+	#map
+	script(type='text/javascript').
+		DG.then(function() {
+			var map = DG.map('map', {
+				center: [55.7539, 37.6213],
+				zoom: 11
+			});
+			DG.marker([55.7539, 37.6213]).addTo(map).bindPopup('Я попап!');
+		});

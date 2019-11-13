@@ -1,0 +1,76 @@
+extends /blocks/layout-default/layout-default
+
+block head
+  - var pageTitle = 'Апартаменты';
+
+block content
+  .content.apartments
+    .owl-carousel
+      img(src="img/701/1.jpeg", alt="")
+      img(src="img/701/2.jpeg", alt="")
+      img(src="img/701/3.jpeg", alt="")
+    .owl-carousel
+      img(src="img/702-703/1.jpeg", alt="")
+      img(src="img/702-703/2.jpeg", alt="")
+      img(src="img/702-703/3.jpeg", alt="")
+      img(src="img/702-703/4.jpeg", alt="")
+      img(src="img/702-703/5.jpeg", alt="")
+      img(src="img/702-703/6.jpeg", alt="")
+      img(src="img/702-703/7.jpeg", alt="")
+    .owl-carousel
+      img(src="img/704/1.jpeg", alt="")
+      img(src="img/704/2.jpeg", alt="")
+      img(src="img/704/3.jpeg", alt="")
+      img(src="img/704/4.jpeg", alt="")
+      img(src="img/704/5.jpeg", alt="")
+    .owl-carousel
+      img(src="img/705/1.jpeg", alt="")
+      img(src="img/705/2.jpeg", alt="")
+      img(src="img/705/3.jpeg", alt="")
+      img(src="img/705/4.jpeg", alt="")
+      img(src="img/705/5.jpeg", alt="")
+      img(src="img/705/6.jpeg", alt="")
+    .owl-carousel
+      img(src="img/706-714/1.jpeg", alt="")
+      img(src="img/706-714/2.jpeg", alt="")
+      img(src="img/706-714/3.jpeg", alt="")
+      img(src="img/706-714/4.jpeg", alt="")
+      img(src="img/706-714/5.jpeg", alt="")
+      img(src="img/706-714/6.jpeg", alt="")
+      img(src="img/706-714/7.jpeg", alt="")
+    .owl-carousel
+      img(src="img/707/1.jpeg", alt="")
+      img(src="img/707/2.jpeg", alt="")
+      img(src="img/707/3.jpeg", alt="")
+      img(src="img/707/4.jpeg", alt="")
+      img(src="img/707/5.jpeg", alt="")
+    .owl-carousel
+      img(src="img/708/1.jpeg", alt="")
+      img(src="img/708/2.jpeg", alt="")
+      img(src="img/708/3.jpeg", alt="")
+    .owl-carousel
+      img(src="img/709/1.jpeg", alt="")
+      img(src="img/709/2.jpeg", alt="")
+      img(src="img/709/3.jpeg", alt="")
+    .owl-carousel
+      img(src="img/711-712/1.jpeg", alt="")
+      img(src="img/711-712/2.jpeg", alt="")
+      img(src="img/711-712/3.jpeg", alt="")
+      img(src="img/711-712/4.jpeg", alt="")
+      img(src="img/711-712/5.jpeg", alt="")
+      img(src="img/711-712/6.jpeg", alt="")
+      img(src="img/711-712/7.jpeg", alt="")
+
+  script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous")
+  script(src="libs/owl.carousel.min.js")
+  script(type='text/javascript').
+    $(document).ready(function(){
+      $(".owl-carousel")
+        .owlCarousel(
+          {
+            items: 1, 
+            margin: 10,
+            nav: true
+          }
+        );
+    });
