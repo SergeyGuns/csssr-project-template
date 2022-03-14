@@ -4,19 +4,26 @@
 	background-color #26120c
 	align-items center
 	justify-content space-between
-	height 10vh
+	min-height 10vh
+	@media (max-width: 750px)
+		flex-direction column
 .top-menu__href
 	margin-left 10px
+	margin-top: 10px
 	font-size 16px
 	text-decoration underline
-	color: white
-	text-decoration-color rgba(255,255,255,.5)
+	color white
+	text-decoration-color rgba(255, 255, 255, .5)
 	&:visited
-		color: white
+		color white
 		
-.top-menu__right-wrapper
-	padding 20px
-	
 .top-menu__left-wrapper
 	padding 20px
-
+	@media (max-width: 750px)
+		padding-bottom 0px
+.top-menu__right-wrapper
+	padding 20px
+	@media (max-width: 750px)
+		padding-top 0px
+		display flex
+		flex-direction column

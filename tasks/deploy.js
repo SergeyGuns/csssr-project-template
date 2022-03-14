@@ -3,10 +3,10 @@ import { login, password } from "./credentials";
 import gutil from "gulp-util";
 import ftp from "vinyl-ftp";
 
-gulp.task("deploy", function() {
+gulp.task("deploy", function () {
 	var conn = ftp.create({
-		host: "lindsayhotel.ru",
-		// host: "cb87170.tmweb.ru",
+		host: "vh286.timeweb.ru",
+		// host: "92.53.96.29",
 		user: login,
 		password,
 		parallel: 10,
