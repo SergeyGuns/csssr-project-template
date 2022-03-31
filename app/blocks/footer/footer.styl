@@ -4,15 +4,18 @@
 	background-color #26120c
 	align-items center
 	justify-content center
-	height 10vh
-
+	min-height 10vh
 .footer__href-wrapper
 	display flex
+	@media (max-width: 750px)
+		flex-direction column
+		padding 20px
 	width 900px
 	justify-content space-between
 .footer__href
 	color white
 	margin-left 10px
+	margin-bottom 10px
 	opacity .5
 	font-size 16px
 	text-decoration underline
