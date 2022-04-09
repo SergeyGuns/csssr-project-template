@@ -1,0 +1,32 @@
+extends /blocks/layout-default/layout-default
+
+block head
+  - var pageTitle = 'Контакты';
+
+block content
+  .content
+    h2.serif Мини отель Линдсей 
+    p Москва Ленинградский проспект&nbsp;26 к&nbsp;1 подъезд&nbsp;2 этаж&nbsp;7
+    a(href='tel:+79251754145') позвонить нам +7 925 175-41-45
+    br
+    a(href='mailto:lindsayhotel@mail.ru') Написать в lindsayhotel@mail.ru
+    
+    a(href='https://wa.me/79251754145>').href-social
+      img(src="/whatsapp-logo.png", alt="", srcset="", height="40")
+      span Написать в Ватсап.
+    a(href='https://t.me/+79175507019').href-social
+      img(src="/telegram-logo.png", alt="", srcset="", height="40")
+      span Написать в Телеграмм.
+    h2.serif Мини отель АПАРТАМЕНТЫ&nbsp;ЛИНД
+    p Москва Ленинградский проспект&nbsp;26 к&nbsp;1 подъезд&nbsp;1 этаж&nbsp;5
+    a(href='tel:+79175507019') позвонить нам  +7 917 550-70-19
+    br
+    a(href='mailto:apartlind@mail.ru') Написать в apartlind@mail.ru.
+    br
+    a(href='https://wa.me/79251754145>').href-social
+      img(src="/whatsapp-logo.png", alt="", srcset="", height="40")
+      span Написать в Ватсап.
+    a(href='https://t.me/+79175507019').href-social
+      img(src="/telegram-logo.png", alt="", srcset="", height="40")
+      span Написать в Телеграмм.
+  include ./map.jade

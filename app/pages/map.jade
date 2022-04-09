@@ -1,0 +1,27 @@
+#map
+script(type='text/javascript').
+  var latLng = [55.783165, 37.572405]
+  var navigatorLinks = `
+      <a target="_blank" href="https://yandex.ru/maps/-/CCUB4SgR2C"><img width='30' src='yandex_maps_icon.webp'/></a>
+      <a target="_blank" href="https://goo.gl/maps/AJQbf9N1a9wse1zHA"><img width='30' src='google_maps_icon.png'/></a>
+  `
+  DG.then(function() {
+    var map = DG.map('map', {
+      center: latLng,
+      zoom: 11
+    });
+    DG.popup({
+      maxWidth: 120,
+      sprawling: true
+    })
+    .setLatLng(latLng)
+    .setContent(navigatorLinks)
+    .openOn(map);
+    //- DG.marker([55.783165, 37.572405]).addTo(map)
+    //- .bindLabel(navigatorLinks)
+    //- DG.popup(latLng)
+    //- 	.setLatLng(latLng)
+    //- 	.setContent(navigatorLinks)
+    //- 	.openOn(map)
+    //- .bindPopup(navigatorLinks);
+  });
