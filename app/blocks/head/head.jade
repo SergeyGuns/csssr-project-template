@@ -53,11 +53,11 @@ head
 
 	//- http://realfavicongenerator.net/faq#why_ico_not_declared
 
-	block head
+	block head 
 	title= pageTitle || ''
 	meta(name='description' content=pageDescription || '')
 	meta(name='keywords' content=pageKeywords || '')
 	script(src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full")
-	link(href='/assets/styles/app.min.css' rel='stylesheet')
+	link(href='/assets/styles/app.min.css?date='+Date.now() rel='stylesheet') 
 	link(rel="stylesheet", href="libs/owl.carousel.min.css")
 	link(rel="stylesheet", href="libs/owl.theme.default.min.css")
