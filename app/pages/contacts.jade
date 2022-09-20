@@ -1,32 +1,77 @@
 extends /blocks/layout-default/layout-default
 
 block head
-  - var pageTitle = 'Контакты';
+	- var pageTitle = 'Контакты';
 
 block content
-  .content
-    h2.serif Мини отель Линдсей 
-    p Москва Ленинградский проспект&nbsp;26 к&nbsp;1 подъезд&nbsp;2 этаж&nbsp;7
-    a(href='tel:+79251754145') позвонить нам +7 925 175-41-45
-    br
-    a(href='mailto:lindsayhotel@mail.ru') Написать в lindsayhotel@mail.ru
-    
-    a(href='https://wa.me/79251754145>' target="_blank").href-social
-      img(src="/whatsapp.svg", alt="", srcset="", height="40")
-      span Написать в Ватсап.
-    a(href='https://t.me/+79251754145' target="_blank").href-social
-      img(src="/telegram.svg", alt="", srcset="", height="40")
-      span Написать в Телеграмм.
-    h2.serif Мини отель АПАРТАМЕНТЫ&nbsp;ЛИНД
-    p Москва Ленинградский проспект&nbsp;26 к&nbsp;1 подъезд&nbsp;1 этаж&nbsp;5
-    a(href='tel:+79175507019') позвонить нам  +7 917 550-70-19
-    br
-    a(href='mailto:apartlind@mail.ru') Написать в apartlind@mail.ru.
-    br
-    a(href='https://wa.me/79175507019>' target="_blank").href-social
-      img(src="/whatsapp.svg", alt="", srcset="", height="40")
-      span Написать в Ватсап.
-    a(href='https://t.me/+79175507019' target="_blank").href-social
-      img(src="/telegram.svg", alt="", srcset="", height="40")
-      span Написать в Телеграмм.
-  include ./map.jade
+	.content
+		h2.serif Мини отель Линдсей
+		p Москва Ленинградский проспект&nbsp;26 к&nbsp;1 подъезд&nbsp;2 этаж&nbsp;7
+		a(href='tel:+79251754145') позвонить нам +7 925 175-41-45
+		br
+		a(href='mailto:lindsayhotel@mail.ru') Написать в lindsayhotel@mail.ru
+
+		a(href='https://wa.me/79251754145>' target="_blank").href-social
+			img(src="/whatsapp.svg" alt="" srcset="" height="40")
+			span Написать в Ватсап.
+		a(href='https://t.me/+79251754145' target="_blank").href-social
+			img(src="/telegram.svg" alt="" srcset="" height="40")
+			span Написать в Телеграмм.
+		h2.serif Мини отель АПАРТАМЕНТЫ&nbsp;ЛИНД
+		p Москва Ленинградский проспект&nbsp;26 к&nbsp;1 подъезд&nbsp;1 этаж&nbsp;5
+		a(href='tel:+79175507019') позвонить нам  +7 917 550-70-19
+		br
+		a(href='mailto:apartlind@mail.ru') Написать в apartlind@mail.ru.
+		br
+		a(href='https://wa.me/79175507019>' target="_blank").href-social
+			img(src="/whatsapp.svg" alt="" srcset="" height="40")
+			span Написать в Ватсап.
+		a(href='https://t.me/+79175507019' target="_blank").href-social
+			img(src="/telegram.svg" alt="" srcset="" height="40")
+			span Написать в Телеграмм.
+	include ./map.jade
+	.content
+		table.org-arrtibutes
+			tr
+				th(colspan='2')
+					h2 Сведения об организации
+			tr
+				td Полное наименование :
+				td Индивидуальный предприниматель Березкина Лида Адамовна
+			tr
+				td Сокращенное наименование :
+				td ИП БЕРЕЗКИНА Л.А.
+			tr
+				td Организационно правовая форма :
+				td Индивидуальный предприниматель
+			tr
+				td ИНН :
+				td 502984909907
+			tr
+				td Банк :
+				td АО ТИНЬКОФФ БАНК
+			tr
+				td Расчетный счет :
+				td 40802810000002598568
+			tr
+				td Кор. счет :
+				td 30101810145250000974
+			tr
+				td БИК :
+				td 044525974
+			tr
+				td ОГРНИП :
+				td 321508100250710 от 21.05.2021г
+			tr
+				td Адрес места нахождения :
+				td 125040, г. Москва, пр-кт Ленинградский, д. 26, корп. 1
+			tr
+				td Почтовый адрес :
+				td 125040, г. Москва, пр-кт Ленинградский, д. 26, корп. 1
+			tr
+				td Номер контактного телефона :
+				td +7 (9263752681)
+
+		br
+		a(href="./soglasiye-polzovatelya-sayta.doc", download,  target="_blank", rel="noopener noreferrer") Загрузить соглашение.doc
+

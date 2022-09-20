@@ -37,12 +37,3 @@ gulp.task('styles', () => (
 		.pipe(gulp.dest('dist/assets/styles'))
 ));
 
-gulp.task('styles:lint', () => (
-	gulp.src(['app/**/*.styl', '!app/styles/**'])
-		.pipe(stylint({
-			reporter: 'stylint-stylish',
-			reporterOptions: {verbose: true}
-		}))
-		.pipe(stylint.reporter())
-		.pipe(stylint.reporter('fail', {failOnWarning: true}))
-));
